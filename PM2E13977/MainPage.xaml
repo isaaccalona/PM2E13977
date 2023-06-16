@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E13977.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <Label Text="SITE VISITOR APP" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+        </Frame>
+        <Image x:Name="foto" WidthRequest="100" HeightRequest="100"/>
+        <Button x:Name="btnfoto" Text="Capturar Imagen" Clicked="btnfoto_Clicked" BackgroundColor="BlueViolet" Margin="10,5,10,5"/>
+        <Label Text="Latitud" FontSize="16" Padding="30,10,30,10"/>
+        <Entry x:Name="latitud" Margin="10,5,10,5"/>
+        <Label Text="Longitud" FontSize="16" Padding="30,10,30,10"/>
+        <Entry x:Name="longitud" Margin="10,5,10,5"/>
+        <Label Text="Descripción" FontSize="16" Padding="30,10,30,10"/>
+        <Entry x:Name="descrip" Margin="10,5,10,5"/>
+        <Button Text="agregar" Clicked="btn_agregar_Clicked" x:Name="btn_agregar" BackgroundColor="BlueViolet" Margin="10,5,10,5"/>
+        <Button Text="lista" Clicked="btn_lista_Clicked" x:Name="btn_lista" BackgroundColor="BlueViolet" Margin="10,5,10,5"/>
+        <Button Text="salir" Clicked="btn_salir_Clicked" x:Name="btn_salir" BackgroundColor="BlueViolet" Margin="10,5,10,5"/>
+
+
+    </StackLayout>
+
+</ContentPage>

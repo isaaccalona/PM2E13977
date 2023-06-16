@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E13977.View.PageSitio">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="MaxLength" Value="100"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="SteelBlue"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Margin" Value="0,20,0,0"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Image x:Name="foto"  WidthRequest="150" HeightRequest="150"/>
+
+            <Button x:Name="btnfoto" Text="Capturar Imagen" Clicked="btnfoto_Clicked" WidthRequest="200" HorizontalOptions="Center"/>
+
+            <Label Text="Latitud" FontSize="16" Padding="10,0,0,0" FontAttributes="Bold"/>
+
+            <Entry x:Name="latitud" IsEnabled="False"/>
+
+            <Label Text="Longitud" FontSize="16" Padding="10,0,0,0" FontAttributes="Bold"/>
+
+            <Entry x:Name="longitud" IsEnabled="False"/>
+
+            <Label Text="Descripción" FontSize="16" Padding="10,0,0,0" FontAttributes="Bold"/>
+            
+            <Entry x:Name="descrip"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnagregar" Text="Agregar" Clicked="btnagregar_Clicked" WidthRequest="150" FontAttributes="Bold" />
+
+                <Button x:Name="btn_lista" Text="lista Sitios" Clicked="btn_lista_Clicked" WidthRequest="150" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <Button x:Name="btn_salir" Text="Salir App" Clicked="btn_salir_Clicked" WidthRequest="150" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
